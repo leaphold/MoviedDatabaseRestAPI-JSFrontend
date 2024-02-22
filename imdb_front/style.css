@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "content";
+    grid-gap: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    margin-bottom: 20px;
+}
+
+.container, .navbar, #login-form-container, #search-forms-container, #output-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#login-form-container {
+    grid-area: login;
+}
+
+#search-forms-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#movie-search-form-container, #review-search-form-container, #output-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+#output-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+#movie-details, #review-details {
+    padding: 10px 0;
+    text-align: center;
+    color: red;
+}
+
+#create{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+#movie-details, #review-details {
+    margin-top: 10px;
+}
+
+pre {
+    background-color: #fff;
+    padding: 10px;
+    overflow: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #search-forms-container, #output-container {
+        grid-template-columns: 1fr; 
+    }
+
+    #output-container {
+        grid-template-columns: 1fr;
+    }
+}

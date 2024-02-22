@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imdb</title>
+    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar -->
+    <nav id="top-nav">
+        <div id="brand">
+            <h1>Imdb</h1>
+        </div>
+        <div id="login-form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <pre id="error-message"></pre>
+
+            <a href="./CreateAccount.html">Create Account</a>
+        </div>
+    </nav>
+
+ <div class="container mt-4">
+   <div id="movie-details"></div>
+        <div class="row">
+            <!-- Search Forms -->
+            <div class="col-md-6">
+                <div id="movie-search-form-container">
+                    <h2>Search Movie by Id</h2>
+                    <form id="movie-search-form" class="form-inline">
+                        <input type="text" id="movie-id-input" class="form-control mb-2 mr-sm-2" placeholder="Enter movie ID" required>
+                        <button type="submit" class="btn btn-primary mb-2">Search Movie</button>
+                    </form>
+                    <h2>All Movies</h2>
+                    <pre id="output"></pre>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="review-details" class="danger"></div>
+                <div id="review-search-form-container">
+                    <h2>Search Review by Id</h2>
+                    <form id="review-search-form" class="form-inline">
+                        <input type="text" id="review-id-input" class="form-control mb-2 mr-sm-2" placeholder="Enter review ID" required>
+                        <button type="submit" class="btn btn-primary mb-2">Search Review</button>
+                    </form>
+                    <h2>All Reviews</h2>
+                    <pre id="output2"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

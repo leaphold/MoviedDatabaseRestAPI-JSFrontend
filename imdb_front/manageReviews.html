@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imdb</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Imdb</span>
+    <a href="./loggedIn.html" class="btn btn-secondary">Back</a>
+    <a href="./index.html" class="navbar-text">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Add Review</h1>
+    <div id="error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+
+    <form id="add-review" class="mb-3">
+      <div class="form-group">
+        <label for="movie">Movie id:</label>
+        <input type="text" id="movie" name="movie" class="form-control" placeholder="Movie">
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating (1-5):</label>
+        <input type="text" id="rating" name="rating" class="form-control" placeholder="Rating">
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment" class="form-control" placeholder="Comment">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Review</button>
+    </form>
+  
+    <pre id="output"></pre>
+
+
+  </div>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

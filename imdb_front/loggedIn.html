@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imdb - Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand mb-0 h1" href="#">Imdb</a>
+        <div class="navbar-nav">
+          <a href="./manageReviews.html" class="nav-link">Add Review</a>
+          <a href="./manageMovies.html" class="nav-link">Add Movie</a>
+          <a href="#" id="logout">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <h1>My IMDB</h1>
+      <div id="error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>My Reviews</h2>
+          <div id="my-reviews"></div>
+        </div>
+        <div class="col-md-6">
+          <h2>My Movies</h2>
+          <div id="my-movies"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

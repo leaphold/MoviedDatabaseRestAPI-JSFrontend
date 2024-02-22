@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imdb - Edit Movie</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Imdb</span>
+    <a href="./loggedIn.html" class="btn btn-secondary">Back</a>
+    <a href="./index.html" class="navbar-text">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Edit Movie</h1>
+    <div id="error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+    <form id="edit-movie" class="mb-3">
+      <div class="form-group">
+        <label for="edit-title">Title:</label>
+        <input type="text" id="title" name="title" class="form-control" placeholder="Title">
+      </div>
+      <div class="form-group">
+        <label for="edit-year">Year:</label>
+        <input type="text" id="year" name="year" class="form-control" placeholder="Year">
+      </div>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </div>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

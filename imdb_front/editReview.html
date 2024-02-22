@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imdb - Edit Review</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Imdb</span>
+    <a href="./loggedIn.html" class="btn btn-secondary">Back</a>
+    <a href="./index.html" class="navbar-text">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Edit Review</h1>
+    <pre id=error-message></pre>
+    <div id="error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+    <form id="edit-review" class="mb-3">
+      <div class="form-group">
+        <label for="movie">Movie:</label>
+        <h3 id="movie-title" class="form-control-static">Loading movie title...</h3> <!-- Display movie title here -->
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" class="form-control" placeholder="Rating" min="1" max="5">
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="form-control" placeholder="Comment"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </div>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
